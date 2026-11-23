@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Think Twice Second Hand Clothes Kasarani Branch — The Royal Plaza, Kasarani-Mwiki Road (QWG6+P64), Nairobi. Live rack price tiers, Wish-Bag counter hold, bundle & size tools, dedicated branch map, and official platforms." />
+  <title>Think Twice Kasarani | Architectural Price Tracker &amp; Store Portal</title>
+
+  <!-- Google Fonts: Space Grotesk, Inter, and JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            stonebg: {
+              DEFAULT: '#FAF5EE',
+              card: '#FFFDF9',
+              grid: '#E8DDD0',
+              dark: '#160A0E',
+              darkCard: '#221016',
+              darkGrid: '#381C26',
+            },
+            pine: {
+              DEFAULT: '#2A1219',
+              muted: '#5E3843',
+              subtle: '#855865',
+              dark: '#FDF6F0',
+              darkMuted: '#D6B8C0',
+              darkSubtle: '#9E7B85',
+            },
+            limevolt: {
+              DEFAULT: '#D94E28',
+              hover: '#BC3E1C',
+              ink: '#FFFDF9',
+            },
+            cobalt: {
+              DEFAULT: '#B8860B',
+              hover: '#9A6F06',
+              soft: 'rgba(184, 134, 11, 0.12)',
+              dark: '#E5B842',
+            }
+          },
+          boxShadow: {
+            arch: '0 12px 32px -12px rgba(42, 18, 25, 0.12)',
+            drawer: '-18px 0 44px -14px rgba(22, 10, 14, 0.34)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    .font-mono-num {
+      font-variant-numeric: tabular-nums;
+    }
+
+    .arch-grid-bg {
+      background-image:
+        linear-gradient(to right, rgba(42, 18, 25, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(42, 18, 25, 0.05) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .dark .arch-grid-bg {
+      background-image:
+        linear-gradient(to right, rgba(229, 184, 66, 0.055) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(229, 184, 66, 0.055) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .dark .arch-grid-bg {
+      background-image:
+        linear-gradient(to right, rgba(163, 230, 53, 0.045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(163, 230, 53, 0.045) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    @keyframes bulletinScroll {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .bulletin-track {
+      display: flex;
+      width: max-content;
+      animation: bulletinScroll 36s linear infinite;
+    }
+
+    .bulletin-track:hover {
+      animation-play-state: paused;
+    }
+
+    input[type="range"].grid-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 6px;
+      border-radius: 9999px;
+      background: #E2D5C5;
+      outline: none;
+    }
+
+    .dark input[type="range"].grid-slider {
+      background: #3A1D27;
+    }
+
+    input[type="range"].grid-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 9999px;
+      background: #D94E28;
+      border: 2px solid #2A1219;
+      cursor: pointer;
+    }
+
+    .ig-brand-bg {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+
+    @keyframes popToast {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .toast-pop {
+      animation: popToast 0.2s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-stonebg text-pine dark:bg-stonebg-dark dark:text-pine-dark font-sans arch-grid-bg transition-colors duration-200 selection:bg-limevolt selection:text-limevolt-ink">
+
+  <!-- ===================================================================== -->
+  <!-- 1. TOP TELEMETRY STRIP (EAT CLOCK, COUNTDOWN, TRAFFIC, COPY & THEME)  -->
+  <!-- ===================================================================== -->
+  <div class="border-b border-stonebg-grid dark:border-stonebg-darkGrid bg-stonebg-card/90 dark:bg-stonebg-darkCard/90 backdrop-blur-xs text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2.5">
+      <div class="flex flex-wrap items-center gap-2">
+        <span id="telemetry-status" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md font-mono font-semibold bg-limevolt/25 text-pine dark:text-limevolt border border-limevolt/50">
+          <span class="w-2 h-2 rounded-full bg-pine dark:bg-limevolt animate-ping"></span>
+          <span id="telemetry-status-text">EAT TELEMETRY...</span>
+        </span>
+
+        <span id="telemetry-countdown" class="px-2.5 py-1 rounded-md font-mono font-semibold font-mono-num bg-stonebg dark:bg-stonebg-dark text-pine-muted dark:text-pine-darkMuted border border-stonebg-grid dark:border-stonebg-darkGrid" aria-live="polite">
+          --:--:--
+        </span>
+
+        <button
+          type="button"
+          id="telemetry-traffic-btn"
+          title="Click to cycle floor traffic status"
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md font-mono font-semibold bg-cobalt-soft text-cobalt dark:text-cobalt-dark border border-cobalt/25 hover:border-cobalt transition cursor-pointer"
+        >
+          <span id="telemetry-traffic-label">Steady Floor</span>
+          <span>↻</span>
+        </button>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+        <button
+          type="button"
+          id="copy-code-top"
+          class="px-2.5 py-1 rounded-md font-mono font-semibold bg-stonebg dark:bg-stonebg-dark hover:border-limevolt text-pine dark:text-pine-dark border border-stonebg-grid dark:border-stonebg-darkGrid transition cursor-pointer"
+        >
+          QWG6+P64
+        </button>
+
+        <button
+          type="button"
+          id="copy-phone-top"
+          class="px-2.5 py-1 rounded-md font-mono font-semibold bg-stonebg dark:bg-stonebg-dark hover:border-limevolt text-pine dark:text-pine-dark border border-stonebg-grid dark:border-stonebg-darkGrid transition cursor-pointer"
+        >
+          0725 406049
+        </button>
+
+        <button
+          type="button"
+          id="theme-switch-btn"
+          aria-label="Toggle Light or Dark Theme"
+          class="px-3 py-1 rounded-md font-mono font-bold bg-pine text-limevolt dark:bg-limevolt dark:text-limevolt-ink transition cursor-pointer"
+        >
+          <span id="theme-switch-label">DARK</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 2. LIVE RACK BULLETIN TICKER                                          -->
+  <!-- ===================================================================== -->
+  <div class="bg-pine text-limevolt dark:bg-stonebg-darkCard dark:text-limevolt border-b border-stonebg-grid dark:border-stonebg-darkGrid py-2 overflow-hidden" role="region" aria-label="Live store bulletin">
+    <div class="bulletin-track font-mono text-xs tracking-wide uppercase">
+      <div id="ticker-slot-a" class="flex items-center gap-6 px-4 whitespace-nowrap">
+        <span>KASARANI ROYAL PLAZA • KASARANI-MWIKI RD</span>
+        <span>//</span>
+        <span>MON–SAT 09:00–17:00 EAT</span>
+        <span>//</span>
+        <span>TIERS: NEW BALE • KSH 200 • KSH 100 • KSH 50/20</span>
+        <span>//</span>
+        <span>HUMANA PEOPLE TO PEOPLE CIRCULAR TEXTILES</span>
+      </div>
+      <div id="ticker-slot-b" class="flex items-center gap-6 px-4 whitespace-nowrap" aria-hidden="true">
+        <span>KASARANI ROYAL PLAZA • KASARANI-MWIKI RD</span>
+        <span>//</span>
+        <span>MON–SAT 09:00–17:00 EAT</span>
+        <span>//</span>
+        <span>TIERS: NEW BALE • KSH 200 • KSH 100 • KSH 50/20</span>
+        <span>//</span>
+        <span>HUMANA PEOPLE TO PEOPLE CIRCULAR TEXTILES</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 3. STICKY NAVIGATION BAR                                              -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-stonebg/92 dark:bg-stonebg-dark/92 backdrop-blur-md border-b border-stonebg-grid dark:border-stonebg-darkGrid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
+      <a href="#" class="flex items-center gap-2.5 shrink-0">
+        <span class="w-8 h-8 rounded-lg bg-limevolt text-limevolt-ink font-mono font-bold text-sm flex items-center justify-center border border-pine/20">
+          T2
+        </span>
+        <div class="leading-none">
+          <div class="font-display font-bold text-base sm:text-lg tracking-tight text-pine dark:text-pine-dark">
+            THINK TWICE
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-widest text-pine-muted dark:text-pine-darkMuted mt-0.5">
+            KASARANI • QWG6+P64
+          </div>
+        </div>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-5 text-xs font-mono uppercase tracking-wider text-pine-muted dark:text-pine-darkMuted" aria-label="Main Navigation">
+        <a href="#cycle-hub" class="hover:text-pine dark:hover:text-limevolt transition">Cycle Hub</a>
+        <a href="#rack-catalog" class="hover:text-pine dark:hover:text-limevolt transition">Live Racks</a>
+        <a href="#bundle-sizing" class="hover:text-pine dark:hover:text-limevolt transition">Bundle &amp; Sizing</a>
+        <a href="#circular-impact" class="hover:text-pine dark:hover:text-limevolt transition">Impact</a>
+        <a href="#shopper-reviews" class="hover:text-pine dark:hover:text-limevolt transition">Reviews</a>
+        <a href="#branch-map" class="hover:text-pine dark:hover:text-limevolt transition">Maps</a>
+        <a href="#official-platforms" class="hover:text-pine dark:hover:text-limevolt transition">Platforms</a>
+      </nav>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <button
+          type="button"
+          id="nav-open-bag"
+          class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg font-mono text-xs font-bold bg-limevolt hover:bg-limevolt-hover text-limevolt-ink border border-pine/20 transition cursor-pointer"
+        >
+          <span>WISH-BAG</span>
+          <span id="nav-bag-badge" class="px-1.5 py-0.5 rounded bg-pine text-limevolt font-mono-num">0</span>
+        </button>
+
+        <button
+          type="button"
+          id="nav-open-manager"
+          class="px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard hover:border-cobalt text-pine dark:text-pine-dark border border-stonebg-grid dark:border-stonebg-darkGrid transition cursor-pointer"
+        >
+          MANAGER
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 4. HERO & LIVE CYCLE HUB                                              -->
+  <!-- ===================================================================== -->
+  <section id="cycle-hub" class="py-10 sm:py-14 border-b border-stonebg-grid dark:border-stonebg-darkGrid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Left 7 Cols: Architectural Headline, KPI Grid & Curated Photography -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md font-mono text-xs bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid text-pine-muted dark:text-pine-darkMuted">
+            <span class="w-2 h-2 rounded-full bg-cobalt"></span>
+            <span>THE ROYAL PLAZA, KASARANI-MWIKI RD • 4.3★ (692+ REVIEWS)</span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.4rem] font-bold tracking-tight leading-[1.05] text-pine dark:text-pine-dark">
+            Structured Thrift Racks. <span class="text-cobalt dark:text-cobalt-dark">Daily Price Drops.</span>
+          </h1>
+
+          <p class="text-base text-pine-muted dark:text-pine-darkMuted leading-relaxed max-w-2xl">
+            Shop sorted European and vintage apparel, outerwear, footwear, and kids wear at Think Twice Kasarani. Track active price tiers, build a Wish-Bag hold list, and check directions before visiting.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="#rack-catalog" class="px-5 py-2.5 rounded-lg font-mono text-xs font-bold uppercase tracking-wider bg-limevolt hover:bg-limevolt-hover text-limevolt-ink border border-pine/20 transition">
+              Explore Live Racks
+            </a>
+            <a href="#branch-map" class="px-5 py-2.5 rounded-lg font-mono text-xs font-bold uppercase tracking-wider bg-cobalt hover:bg-cobalt-hover text-white transition">
+              Branch Map &amp; Route
+            </a>
+            <a href="#official-platforms" class="px-4 py-2.5 rounded-lg font-mono text-xs font-semibold uppercase tracking-wider bg-stonebg-card dark:bg-stonebg-darkCard text-pine dark:text-pine-dark border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-limevolt transition">
+              Official Platforms
+            </a>
+          </div>
+
+          <!-- Architectural Metric Cells -->
+          <div class="grid grid-cols-3 gap-3">
+            <div class="p-4 rounded-xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch">
+              <div class="font-mono text-[10px] uppercase tracking-wider text-pine-subtle dark:text-pine-darkSubtle">Active Tier</div>
+              <div id="hero-tier-readout" class="font-mono font-bold text-lg sm:text-xl text-cobalt dark:text-cobalt-dark font-mono-num mt-1">KSh 200</div>
+            </div>
+            <div class="p-4 rounded-xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch">
+              <div class="font-mono text-[10px] uppercase tracking-wider text-pine-subtle dark:text-pine-darkSubtle">Hours (EAT)</div>
+              <div class="font-mono font-bold text-xs sm:text-sm text-pine dark:text-pine-dark font-mono-num mt-1.5">Mon–Sat 09–17</div>
+            </div>
+            <div class="p-4 rounded-xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch">
+              <div class="font-mono text-[10px] uppercase tracking-wider text-pine-subtle dark:text-pine-darkSubtle">Rack Stock</div>
+              <div id="hero-rack-count" class="font-mono font-bold text-sm sm:text-base text-pine dark:text-limevolt font-mono-num mt-1.5">8 Featured</div>
+            </div>
+          </div>
+
+          <!-- Crisp Curated Photography Row -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <figure class="rounded-xl overflow-hidden bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch">
+              <div class="h-48 overflow-hidden bg-stonebg-grid dark:bg-stonebg-darkGrid">
+                <img
+                  src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=900&q=80"
+                  alt="Sorted garments on display racks at Think Twice Kasarani"
+                  loading="lazy"
+                  onerror="this.src='https://placehold.co/800x450/E7EAE3/0F241C?text=Think+Twice+Kasarani+Racks'"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption class="px-3.5 py-2.5 font-mono text-xs flex items-center justify-between">
+                <span class="font-semibold">Apparel &amp; Outerwear Racks</span>
+                <span class="text-pine-subtle dark:text-pine-darkSubtle">Royal Plaza</span>
+              </figcaption>
+            </figure>
+
+            <figure class="rounded-xl overflow-hidden bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch">
+              <div class="h-48 overflow-hidden bg-stonebg-grid dark:bg-stonebg-darkGrid">
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+                  alt="Sneakers and footwear selection"
+                  loading="lazy"
+                  onerror="this.src='https://placehold.co/800x450/E7EAE3/0F241C?text=Footwear+Racks'"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption class="px-3.5 py-2.5 font-mono text-xs flex items-center justify-between">
+                <span class="font-semibold">Footwear &amp; Sneakers</span>
+                <span class="text-cobalt dark:text-cobalt-dark font-semibold">EU 37–44</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Right 5 Cols: Interactive Live Cycle Hub -->
+        <aside aria-label="Live Cycle Price Tier Selector" class="lg:col-span-5 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch p-5 sm:p-6 space-y-5">
+          <div class="flex items-center justify-between gap-2 pb-3 border-b border-stonebg-grid dark:border-stonebg-darkGrid">
+            <div>
+              <div class="font-mono text-[10px] uppercase tracking-widest text-cobalt dark:text-cobalt-dark font-bold">
+                LIVE CYCLE HUB
+              </div>
+              <h2 class="font-display text-2xl font-bold text-pine dark:text-pine-dark">
+                Active Price Tier
+              </h2>
+            </div>
+            <span id="cycle-eat-date" class="font-mono text-xs font-mono-num text-pine-subtle dark:text-pine-darkSubtle">
+              -- --- ----
+            </span>
+          </div>
+
+          <!-- Gold (4-Week) vs Red (2-Week) Toggle -->
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between font-mono text-[11px]">
+              <span class="uppercase text-pine-subtle dark:text-pine-darkSubtle">Rotation Cycle</span>
+              <span id="cycle-mode-badge" class="font-bold text-pine dark:text-limevolt">GOLD (4-WEEK)</span>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 p-1 rounded-xl bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+              <button
+                type="button"
+                id="btn-mode-gold"
+                class="py-2 px-3 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink transition cursor-pointer"
+              >
+                Gold (4-Week)
+              </button>
+              <button
+                type="button"
+                id="btn-mode-red"
+                class="py-2 px-3 rounded-lg font-mono text-xs font-bold text-pine-muted dark:text-pine-darkMuted hover:text-pine dark:hover:text-pine-dark transition cursor-pointer"
+              >
+                Red (2-Week)
+              </button>
+            </div>
+          </div>
+
+          <!-- Current Tier Readout -->
+          <div class="p-4 rounded-xl bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid space-y-2">
+            <div class="flex items-center justify-between font-mono text-[11px]">
+              <span id="active-tier-tag" class="font-bold uppercase text-cobalt dark:text-cobalt-dark">2. KSH 200 TIER</span>
+              <span class="text-pine-subtle dark:text-pine-darkSubtle">Fitting Rooms: Open</span>
+            </div>
+            <div id="active-tier-price" class="font-display text-3xl sm:text-4xl font-bold text-pine dark:text-pine-dark font-mono-num">
+              KSh 200 <span class="font-mono text-xs font-semibold text-pine-muted dark:text-pine-darkMuted">&amp; Below</span>
+            </div>
+            <p id="active-tier-desc" class="text-xs sm:text-sm text-pine-muted dark:text-pine-darkMuted leading-relaxed">
+              Mid-cycle rack pricing across dresses, shirts, casual layers, and denim at The Royal Plaza.
+            </p>
+            <p id="active-mode-note" class="font-mono text-[11px] text-pine-subtle dark:text-pine-darkSubtle pt-1">
+              4-week Gold cycle paces markdown steps gradually across the month.
+            </p>
+          </div>
+
+          <!-- 4 Price Tier Buttons -->
+          <div class="space-y-2">
+            <div class="font-mono text-[11px] uppercase tracking-wider text-pine-subtle dark:text-pine-darkSubtle">
+              Select Price Tier
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <button type="button" data-tier-idx="0" class="tier-select-btn p-3 rounded-xl border text-left transition cursor-pointer bg-stonebg dark:bg-stonebg-dark border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt">
+                <div class="font-mono text-xs font-bold">1. New Bale Release</div>
+                <div class="font-mono text-[11px] text-pine-muted dark:text-pine-darkMuted font-mono-num">KSh 350 – 800</div>
+              </button>
+
+              <button type="button" data-tier-idx="1" class="tier-select-btn p-3 rounded-xl border text-left transition cursor-pointer bg-limevolt/25 dark:bg-limevolt/15 border-pine dark:border-limevolt text-pine dark:text-limevolt">
+                <div class="font-mono text-xs font-bold">2. KSh 200 Tier</div>
+                <div class="font-mono text-[11px] opacity-85 font-mono-num">Active Standard Tier</div>
+              </button>
+
+              <button type="button" data-tier-idx="2" class="tier-select-btn p-3 rounded-xl border text-left transition cursor-pointer bg-stonebg dark:bg-stonebg-dark border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt">
+                <div class="font-mono text-xs font-bold">3. KSh 100 Markdown</div>
+                <div class="font-mono text-[11px] text-pine-muted dark:text-pine-darkMuted font-mono-num">Step-Down Racks</div>
+              </button>
+
+              <button type="button" data-tier-idx="3" class="tier-select-btn p-3 rounded-xl border text-left transition cursor-pointer bg-stonebg dark:bg-stonebg-dark border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt">
+                <div class="font-mono text-xs font-bold">4. KSh 50/20 Clearance</div>
+                <div class="font-mono text-[11px] text-pine-muted dark:text-pine-darkMuted font-mono-num">Final Rotation Sweep</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Share & Copy Actions -->
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <button
+              type="button"
+              id="share-tier-whatsapp"
+              class="flex-1 py-2.5 px-4 rounded-lg font-mono text-xs font-bold bg-[#25D366] hover:brightness-95 text-white transition cursor-pointer"
+            >
+              Share on WhatsApp
+            </button>
+            <button
+              type="button"
+              id="copy-tier-text"
+              class="py-2.5 px-4 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark hover:border-cobalt text-pine dark:text-pine-dark border border-stonebg-grid dark:border-stonebg-darkGrid transition cursor-pointer"
+            >
+              Copy Tier
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. FILTERABLE LIVE RACK CATALOG                                       -->
+  <!-- ===================================================================== -->
+  <section id="rack-catalog" class="py-14 sm:py-18 border-b border-stonebg-grid dark:border-stonebg-darkGrid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div class="font-mono text-xs uppercase tracking-widest text-cobalt dark:text-cobalt-dark font-bold">
+            FLOOR INVENTORY MATRIX
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-pine dark:text-pine-dark mt-1">
+            Live Rack Catalog
+          </h2>
+          <p class="text-sm text-pine-muted dark:text-pine-darkMuted mt-1">
+            Search, filter by department or size, inspect details, and add items to your Pick-Up Wish-Bag.
+          </p>
+        </div>
+
+        <div class="w-full md:w-80">
+          <label for="catalog-search" class="sr-only">Search catalog items</label>
+          <input
+            type="search"
+            id="catalog-search"
+            placeholder="Search coat, sneakers, dress, kids..."
+            class="w-full px-4 py-2.5 rounded-lg text-sm bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid text-pine dark:text-pine-dark focus:outline-none focus:border-cobalt"
+          />
+        </div>
+      </div>
+
+      <!-- Filter Bar: Departments + Price Slider + Size -->
+      <div class="p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+        <div id="catalog-dept-tabs" class="flex flex-wrap items-center gap-1.5" role="tablist" aria-label="Departments">
+          <button type="button" data-dept="All" class="dept-btn px-3.5 py-2 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink cursor-pointer">All</button>
+          <button type="button" data-dept="Women" class="dept-btn px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark text-pine-muted dark:text-pine-darkMuted border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer">Women</button>
+          <button type="button" data-dept="Men" class="dept-btn px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark text-pine-muted dark:text-pine-darkMuted border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer">Men</button>
+          <button type="button" data-dept="Shoes" class="dept-btn px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark text-pine-muted dark:text-pine-darkMuted border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer">Shoes</button>
+          <button type="button" data-dept="Kids" class="dept-btn px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark text-pine-muted dark:text-pine-darkMuted border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer">Kids</button>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-5">
+          <div class="min-w-[180px] flex-1 sm:flex-initial space-y-1">
+            <div class="flex items-center justify-between font-mono text-xs">
+              <label for="catalog-max-price" class="text-pine-muted dark:text-pine-darkMuted">Max Price</label>
+              <span class="font-bold text-cobalt dark:text-cobalt-dark font-mono-num">KSh <span id="catalog-max-price-readout">1000</span></span>
+            </div>
+            <input type="range" id="catalog-max-price" min="20" max="1000" step="10" value="1000" class="grid-slider w-full" />
+          </div>
+
+          <div class="space-y-1">
+            <label for="catalog-size-select" class="block font-mono text-[10px] uppercase text-pine-subtle dark:text-pine-darkSubtle">Size</label>
+            <select id="catalog-size-select" class="px-3 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid text-pine dark:text-pine-dark cursor-pointer">
+              <option value="All">All Sizes</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="EU 40">EU 40</option>
+              <option value="EU 42">EU 42</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between font-mono text-xs text-pine-muted dark:text-pine-darkMuted">
+        <span id="catalog-match-count" class="font-mono-num">8 items displayed</span>
+        <button type="button" id="catalog-reset-btn" class="font-bold text-cobalt dark:text-cobalt-dark hover:underline cursor-pointer">
+          Reset Filters
+        </button>
+      </div>
+
+      <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" aria-live="polite"></div>
+
+      <!-- Quick Inspect Panel (appears when user clicks Inspect on any rack item) -->
+      <div id="quick-inspect-box" class="hidden p-5 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border-2 border-cobalt dark:border-cobalt-dark shadow-arch">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="font-mono text-[11px] uppercase tracking-wider text-cobalt dark:text-cobalt-dark font-bold">
+              QUICK RACK INSPECT
+            </div>
+            <h3 id="inspect-item-title" class="font-display text-xl font-bold text-pine dark:text-pine-dark"></h3>
+            <p id="inspect-item-meta" class="font-mono text-xs text-pine-muted dark:text-pine-darkMuted"></p>
+            <p id="inspect-item-note" class="text-xs sm:text-sm text-pine-muted dark:text-pine-darkMuted pt-1"></p>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button type="button" id="inspect-add-bag-btn" class="px-4 py-2.5 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink border border-pine/20 cursor-pointer">
+              Add to Wish-Bag
+            </button>
+            <button type="button" id="inspect-close-btn" class="px-3.5 py-2.5 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. BUNDLE BUDGET ESTIMATOR & SIZING CONVERTER                        -->
+  <!-- ===================================================================== -->
+  <section id="bundle-sizing" class="py-14 sm:py-18 border-b border-stonebg-grid dark:border-stonebg-darkGrid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div>
+        <div class="font-mono text-xs uppercase tracking-widest text-cobalt dark:text-cobalt-dark font-bold">
+          SHOPPER CALCULATORS
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-pine dark:text-pine-dark mt-1">
+          Bundle Budget Estimator &amp; Sizing Converter
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Bundle Budget Estimator -->
+        <div class="lg:col-span-6 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch p-6 space-y-5">
+          <div class="flex items-center justify-between">
+            <h3 class="font-display text-xl font-bold text-pine dark:text-pine-dark">Bundle Budget Estimator</h3>
+            <button type="button" id="bundle-zero-btn" class="font-mono text-xs text-pine-subtle hover:text-pine dark:hover:text-limevolt cursor-pointer">Reset</button>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3">
+            <label class="space-y-1">
+              <span class="block font-mono text-xs font-semibold font-mono-num">KSh 200 Qty</span>
+              <input type="number" min="0" value="2" data-price="200" class="est-qty w-full px-3 py-2 rounded-lg font-mono text-sm font-bold font-mono-num bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid" />
+            </label>
+            <label class="space-y-1">
+              <span class="block font-mono text-xs font-semibold font-mono-num">KSh 100 Qty</span>
+              <input type="number" min="0" value="3" data-price="100" class="est-qty w-full px-3 py-2 rounded-lg font-mono text-sm font-bold font-mono-num bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid" />
+            </label>
+            <label class="space-y-1">
+              <span class="block font-mono text-xs font-semibold font-mono-num">KSh 50 Qty</span>
+              <input type="number" min="0" value="4" data-price="50" class="est-qty w-full px-3 py-2 rounded-lg font-mono text-sm font-bold font-mono-num bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid" />
+            </label>
+          </div>
+
+          <div class="p-4 rounded-xl bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid flex items-center justify-between">
+            <div>
+              <div class="font-mono text-[11px] uppercase text-pine-subtle dark:text-pine-darkSubtle">Estimated Total</div>
+              <div id="est-total-out" class="font-mono text-2xl sm:text-3xl font-bold text-cobalt dark:text-cobalt-dark font-mono-num">KSh 900</div>
+            </div>
+            <div class="text-right font-mono text-xs">
+              <div id="est-pieces-out" class="font-bold font-mono-num">9 pieces</div>
+              <div id="est-perk-out" class="text-pine-muted dark:text-pine-darkMuted mt-0.5">Bundle perk eligible</div>
+            </div>
+          </div>
+
+          <p class="text-xs text-pine-muted dark:text-pine-darkMuted bg-limevolt/15 border border-limevolt/40 rounded-xl p-3">
+            <strong>Bundle Perk Note:</strong> Multi-piece selections often pair cleanly with step-down and KSh 50/20 clearance racks—ask the Kasarani floor team at checkout for active bundle offers.
+          </p>
+        </div>
+
+        <!-- Shoe & Garment Size Converter -->
+        <div class="lg:col-span-6 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch p-6 space-y-5">
+          <h3 class="font-display text-xl font-bold text-pine dark:text-pine-dark">EU / UK / US Shoe &amp; Garment Size Converter</h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <label class="space-y-1">
+              <span class="block font-mono text-xs font-semibold">European Footwear (EU)</span>
+              <select id="conv-shoe-eu" class="w-full px-3 py-2 rounded-lg font-mono text-xs font-bold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">
+                <option value="37">EU 37</option>
+                <option value="38">EU 38</option>
+                <option value="39">EU 39</option>
+                <option value="40" selected>EU 40</option>
+                <option value="41">EU 41</option>
+                <option value="42">EU 42</option>
+                <option value="43">EU 43</option>
+                <option value="44">EU 44</option>
+              </select>
+            </label>
+
+            <label class="space-y-1">
+              <span class="block font-mono text-xs font-semibold">Garment Size Tag</span>
+              <select id="conv-garment-size" class="w-full px-3 py-2 rounded-lg font-mono text-xs font-bold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">
+                <option value="S">Size S</option>
+                <option value="M" selected>Size M</option>
+                <option value="L">Size L</option>
+                <option value="XL">Size XL</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3 font-mono">
+            <div class="p-3 rounded-xl bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+              <div class="text-[10px] uppercase text-pine-subtle">UK Shoe</div>
+              <div id="conv-uk-out" class="text-sm sm:text-base font-bold font-mono-num mt-0.5">UK 6.5</div>
+            </div>
+            <div class="p-3 rounded-xl bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+              <div class="text-[10px] uppercase text-pine-subtle">US Shoe</div>
+              <div id="conv-us-out" class="text-xs font-bold text-cobalt dark:text-cobalt-dark font-mono-num mt-1">W 9 / M 7.5</div>
+            </div>
+            <div class="p-3 rounded-xl bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+              <div class="text-[10px] uppercase text-pine-subtle">Length</div>
+              <div id="conv-cm-out" class="text-sm sm:text-base font-bold font-mono-num mt-0.5">25.3 cm</div>
+            </div>
+          </div>
+
+          <p id="conv-garment-note" class="text-xs text-pine-muted dark:text-pine-darkMuted bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid rounded-xl p-3">
+            <strong>Size M:</strong> Roughly UK 10–12 / US 6–8. Always check individual brand cut and fitting room fit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 7. CIRCULAR IMPACT & MARKDOWN PROGRESSION                             -->
+  <!-- ===================================================================== -->
+  <section id="circular-impact" class="py-14 sm:py-18 border-b border-stonebg-grid dark:border-stonebg-darkGrid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div>
+        <div class="font-mono text-xs uppercase tracking-widest text-cobalt dark:text-cobalt-dark font-bold">
+          HOW RACKS ROTATE &amp; GIVE BACK
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-pine dark:text-pine-dark mt-1">
+          Markdown Progression &amp; Circular Impact
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="p-5 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch space-y-1.5">
+          <div class="font-mono text-xs font-bold text-cobalt dark:text-cobalt-dark">STEP 01</div>
+          <h3 class="font-display text-lg font-bold">New Bale Release</h3>
+          <p class="text-xs text-pine-muted dark:text-pine-darkMuted leading-relaxed">Fresh bales open at KSh 350–800 with structured coats, blazers, and denim.</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch space-y-1.5">
+          <div class="font-mono text-xs font-bold text-cobalt dark:text-cobalt-dark">STEP 02</div>
+          <h3 class="font-display text-lg font-bold">KSh 200 Tier</h3>
+          <p class="text-xs text-pine-muted dark:text-pine-darkMuted leading-relaxed">Mid-cycle rack pricing makes everyday dresses, shirts, and sneakers accessible.</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch space-y-1.5">
+          <div class="font-mono text-xs font-bold text-cobalt dark:text-cobalt-dark">STEP 03</div>
+          <h3 class="font-display text-lg font-bold">KSh 100 Markdown</h3>
+          <p class="text-xs text-pine-muted dark:text-pine-darkMuted leading-relaxed">Scheduled markdown drops bring marked racks down to KSh 100.</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch space-y-1.5">
+          <div class="font-mono text-xs font-bold text-limevolt bg-pine dark:bg-limevolt dark:text-limevolt-ink inline-block px-2 py-0.5 rounded">STEP 04</div>
+          <h3 class="font-display text-lg font-bold">KSh 50/20 Clearance</h3>
+          <p class="text-xs text-pine-muted dark:text-pine-darkMuted leading-relaxed">Final sweep clears remaining pieces at KSh 50 and KSh 20 before next bale rotation.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch p-6 sm:p-8 flex flex-col lg:flex-row items-center gap-6">
+        <img
+          src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80"
+          alt="Circular garment reuse and sorted textile bundles"
+          loading="lazy"
+          onerror="this.src='https://placehold.co/700x400/E7EAE3/0F241C?text=Circular+Textiles'"
+          class="w-full lg:w-72 h-44 object-cover rounded-xl shrink-0"
+        />
+        <div class="space-y-2">
+          <div class="font-mono text-xs font-bold uppercase tracking-wider text-pine dark:text-limevolt">
+            HUMANA PEOPLE TO PEOPLE • CIRCULAR FASHION
+          </div>
+          <h3 class="font-display text-2xl font-bold text-pine dark:text-pine-dark">
+            Second-hand clothing with measurable circular and community value.
+          </h3>
+          <p class="text-sm text-pine-muted dark:text-pine-darkMuted leading-relaxed">
+            Rewearing pre-loved garments cuts textile waste while Think Twice operations help support Humana People to People development and community initiatives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 8. VERIFIED SHOPPER REVIEWS                                          -->
+  <!-- ===================================================================== -->
+  <section id="shopper-reviews" class="py-14 sm:py-18 border-b border-stonebg-grid dark:border-stonebg-darkGrid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <div class="font-mono text-xs uppercase tracking-widest text-cobalt dark:text-cobalt-dark font-bold">
+            KASARANI SHOPPER FEEDBACK
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-pine dark:text-pine-dark mt-1">
+            Verified Reviews (4.3★)
+          </h2>
+        </div>
+        <div id="reviews-total-pill" class="px-3.5 py-2 rounded-lg font-mono text-xs font-bold font-mono-num bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid">
+          4.3★ • 692+ Reviews
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <div class="lg:col-span-7 space-y-3">
+          <div class="flex flex-wrap gap-1.5">
+            <button type="button" data-rev-star="All" class="rev-star-btn px-3 py-1.5 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink cursor-pointer">All</button>
+            <button type="button" data-rev-star="5" class="rev-star-btn px-3 py-1.5 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">5★</button>
+            <button type="button" data-rev-star="4" class="rev-star-btn px-3 py-1.5 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">4★</button>
+            <button type="button" data-rev-star="3" class="rev-star-btn px-3 py-1.5 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">3★</button>
+          </div>
+          <div id="reviews-list" class="space-y-3" aria-live="polite"></div>
+        </div>
+
+        <form id="review-submit-form" class="lg:col-span-5 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch p-5 sm:p-6 space-y-4">
+          <h3 class="font-display text-xl font-bold text-pine dark:text-pine-dark">Submit a Review</h3>
+          <div>
+            <label for="rev-name" class="block font-mono text-xs font-semibold mb-1">Name</label>
+            <input type="text" id="rev-name" required placeholder="e.g., Brian Mwangi" class="w-full px-3.5 py-2 rounded-lg text-sm bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid" />
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label for="rev-rating" class="block font-mono text-xs font-semibold mb-1">Rating</label>
+              <select id="rev-rating" class="w-full px-3 py-2 rounded-lg font-mono text-xs font-bold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+              </select>
+            </div>
+            <div>
+              <label for="rev-tier" class="block font-mono text-xs font-semibold mb-1">Tier Visited</label>
+              <select id="rev-tier" class="w-full px-3 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+                <option value="New Bale Release">New Bale</option>
+                <option value="KSh 200 Tier" selected>KSh 200 Tier</option>
+                <option value="KSh 100 Markdown">KSh 100</option>
+                <option value="KSh 50/20 Clearance">KSh 50/20</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="rev-text" class="block font-mono text-xs font-semibold mb-1">Review Comment</label>
+            <textarea id="rev-text" rows="3" required placeholder="How were the racks, pricing, and staff at Kasarani?" class="w-full px-3.5 py-2 rounded-lg text-sm bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid"></textarea>
+          </div>
+          <button type="submit" class="w-full py-2.5 px-4 rounded-lg font-mono text-xs font-bold uppercase tracking-wider bg-cobalt hover:bg-cobalt-hover text-white transition cursor-pointer">
+            Post Review
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 9A. DEDICATED MAPS SECTION                                            -->
+  <!-- ===================================================================== -->
+  <section id="branch-map" class="py-14 sm:py-18 border-b border-stonebg-grid dark:border-stonebg-darkGrid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div class="font-mono text-xs uppercase tracking-widest text-cobalt dark:text-cobalt-dark font-bold">
+            DEDICATED BRANCH MAP &amp; ROUTE VIEW
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-pine dark:text-pine-dark mt-1">
+            Store Locations &amp; Navigation
+          </h2>
+          <p class="text-sm text-pine-muted dark:text-pine-darkMuted mt-1">
+            Switch between Kasarani Royal Plaza (default), CBD / Moi Ave, Garden City / Thika Rd, and Donholm Head Office.
+          </p>
+        </div>
+
+        <div id="map-loc-tabs" class="flex flex-wrap gap-1.5" role="tablist" aria-label="Map Locations">
+          <button type="button" data-loc="kasarani" class="loc-tab px-3.5 py-2 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink cursor-pointer">
+            Kasarani Royal Plaza
+          </button>
+          <button type="button" data-loc="cbd" class="loc-tab px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer">
+            CBD / Moi Ave
+          </button>
+          <button type="button" data-loc="garden" class="loc-tab px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer">
+            Garden City / Thika Rd
+          </button>
+          <button type="button" data-loc="donholm" class="loc-tab px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer">
+            Donholm Head Office
+          </button>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+        <!-- Embedded OpenStreetMap Interactive Frame -->
+        <div class="lg:col-span-7 min-h-[320px] sm:min-h-[380px] bg-stonebg-grid dark:bg-stonebg-darkGrid relative border-b lg:border-b-0 lg:border-r border-stonebg-grid dark:border-stonebg-darkGrid">
+          <iframe
+            id="osm-map-frame"
+            title="Think Twice Branch Location Map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=36.8850%2C-1.2350%2C36.9120%2C-1.2100&amp;layer=mapnik&amp;marker=-1.2225%2C36.8985"
+            class="w-full h-full min-h-[320px] sm:min-h-[380px] border-0"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <!-- Location Telemetry, Copy Actions & Route Providers -->
+        <div class="lg:col-span-5 p-6 flex flex-col justify-between gap-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <span id="map-loc-badge" class="px-2.5 py-1 rounded font-mono text-[11px] font-bold bg-limevolt/25 text-pine dark:text-limevolt">
+                PRIMARY HUB • QWG6+P64
+              </span>
+              <span id="map-loc-coords" class="font-mono text-xs text-pine-subtle dark:text-pine-darkSubtle font-mono-num">
+                -1.2225, 36.8985
+              </span>
+            </div>
+
+            <h3 id="map-loc-title" class="font-display text-2xl font-bold text-pine dark:text-pine-dark">
+              Think Twice Kasarani — The Royal Plaza
+            </h3>
+
+            <p id="map-loc-address" class="text-sm text-pine-muted dark:text-pine-darkMuted">
+              The Royal Plaza, Kasarani-Mwiki Road, Nairobi, Kenya
+            </p>
+
+            <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+              <div class="p-3 rounded-xl bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+                <div class="text-[10px] uppercase text-pine-subtle">Plus Code / Ref</div>
+                <div id="map-loc-plus" class="font-bold text-cobalt dark:text-cobalt-dark font-mono-num mt-0.5">QWG6+P64</div>
+              </div>
+              <div class="p-3 rounded-xl bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+                <div class="text-[10px] uppercase text-pine-subtle">Desk Phone</div>
+                <div id="map-loc-phone" class="font-bold font-mono-num mt-0.5">0725 406049</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-2.5 pt-2 border-t border-stonebg-grid dark:border-stonebg-darkGrid">
+            <div class="grid grid-cols-3 gap-2 font-mono text-xs font-bold">
+              <a id="link-gmaps" href="https://maps.google.com/?q=QWG6+P64,+Kasarani+Mwiki+Rd,+Nairobi" target="_blank" rel="noopener noreferrer" class="py-2.5 px-2 rounded-lg bg-cobalt hover:bg-cobalt-hover text-white text-center transition">
+                Google Maps ↗
+              </a>
+              <a id="link-waze" href="https://waze.com/ul?q=QWG6+P64+Kasarani+Mwiki+Rd+Nairobi" target="_blank" rel="noopener noreferrer" class="py-2.5 px-2 rounded-lg bg-stonebg dark:bg-stonebg-dark hover:border-cobalt border border-stonebg-grid dark:border-stonebg-darkGrid text-center transition">
+                Waze ↗
+              </a>
+              <a id="link-osm" href="https://www.openstreetmap.org/?mlat=-1.2225&mlon=36.8985#map=16/-1.2225/36.8985" target="_blank" rel="noopener noreferrer" class="py-2.5 px-2 rounded-lg bg-stonebg dark:bg-stonebg-dark hover:border-cobalt border border-stonebg-grid dark:border-stonebg-darkGrid text-center transition">
+                OSM ↗
+              </a>
+            </div>
+
+            <button
+              type="button"
+              id="map-copy-pin-btn"
+              class="w-full py-2.5 px-4 rounded-lg font-mono text-xs font-bold bg-limevolt hover:bg-limevolt-hover text-limevolt-ink border border-pine/20 transition cursor-pointer"
+            >
+              Copy Address, Plus Code &amp; Phone
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 9B. DEDICATED OFFICIAL PLATFORMS SECTION (BRAND-COLORED ICON TILES)   -->
+  <!-- ===================================================================== -->
+  <section id="official-platforms" class="py-14 sm:py-18">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div>
+        <div class="font-mono text-xs uppercase tracking-widest text-cobalt dark:text-cobalt-dark font-bold">
+          OFFICIAL DIGITAL CHANNELS &amp; HOTLINES
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-pine dark:text-pine-dark mt-1">
+          Think Twice Kenya Platforms
+        </h2>
+        <p class="text-sm text-pine-muted dark:text-pine-darkMuted mt-1">
+          Official web hubs, social channels, and direct lines styled with each platform’s authentic brand colors.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <!-- 1. Official Website (Cobalt Blue) -->
+        <a href="https://www.thinktwice.co.ke/" target="_blank" rel="noopener noreferrer" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#2563EB] shadow-arch transition flex flex-col justify-between gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#2563EB] text-white flex items-center justify-center shadow-xs">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark group-hover:text-[#2563EB]">Website</div>
+            <div class="font-mono text-[11px] text-pine-subtle dark:text-pine-darkSubtle truncate">thinktwice.co.ke</div>
+          </div>
+        </a>
+
+        <!-- 2. Linktree (Vibrant Emerald/Lime) -->
+        <a href="https://linktr.ee/ThinkTwiceKenya" target="_blank" rel="noopener noreferrer" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#43E660] shadow-arch transition flex flex-col justify-between gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#43E660] text-[#0F241C] flex items-center justify-center shadow-xs">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v18M5 8l7 5 7-5M6 15h12" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark">Linktree</div>
+            <div class="font-mono text-[11px] text-pine-subtle dark:text-pine-darkSubtle truncate">/ThinkTwiceKenya</div>
+          </div>
+        </a>
+
+        <!-- 3. Instagram (Signature Gradient) -->
+        <a href="https://www.instagram.com/thinktwicekenya/" target="_blank" rel="noopener noreferrer" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#E1306C] shadow-arch transition flex flex-col justify-between gap-3">
+          <div class="w-11 h-11 rounded-xl ig-brand-bg text-white flex items-center justify-center shadow-xs">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark">Instagram</div>
+            <div class="font-mono text-[11px] text-pine-subtle dark:text-pine-darkSubtle truncate">@thinktwicekenya</div>
+          </div>
+        </a>
+
+        <!-- 4. Facebook (#1877F2) -->
+        <a href="https://www.facebook.com/ThinkTwiceKenya/" target="_blank" rel="noopener noreferrer" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#1877F2] shadow-arch transition flex flex-col justify-between gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#1877F2] text-white flex items-center justify-center shadow-xs font-display font-bold text-xl">
+            f
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark">Facebook</div>
+            <div class="font-mono text-[11px] text-pine-subtle dark:text-pine-darkSubtle truncate">ThinkTwiceKenya</div>
+          </div>
+        </a>
+
+        <!-- 5. TikTok (#010101 with Cyan/Rose Accent Border) -->
+        <a href="https://www.tiktok.com/@thinktwicekenya" target="_blank" rel="noopener noreferrer" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#FE2C55] shadow-arch transition flex flex-col justify-between gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#010101] text-white flex items-center justify-center shadow-xs border-2 border-[#25F4EE]">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.4a6.33 6.33 0 0 0-.86-.06A6.34 6.34 0 0 0 3 15.68a6.34 6.34 0 0 0 10.86 4.43v-7.15a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark">TikTok</div>
+            <div class="font-mono text-[11px] text-pine-subtle dark:text-pine-darkSubtle truncate">@thinktwicekenya</div>
+          </div>
+        </a>
+
+        <!-- 6. YouTube (#FF0000) -->
+        <a href="https://www.youtube.com/@thinktwicekenya" target="_blank" rel="noopener noreferrer" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#FF0000] shadow-arch transition flex flex-col justify-between gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#FF0000] text-white flex items-center justify-center shadow-xs">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21.58 7.19a2.75 2.75 0 0 0-1.94-1.95C17.93 4.78 12 4.78 12 4.78s-5.93 0-7.64.46A2.75 2.75 0 0 0 2.42 7.19 28.8 28.8 0 0 0 2 12a28.8 28.8 0 0 0 .42 4.81 2.75 2.75 0 0 0 1.94 1.95c1.71.46 7.64.46 7.64.46s5.93 0 7.64-.46a2.75 2.75 0 0 0 1.94-1.95A28.8 28.8 0 0 0 22 12a28.8 28.8 0 0 0-.42-4.81zM10 15.1V8.9l5.2 3.1-5.2 3.1z" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark">YouTube</div>
+            <div class="font-mono text-[11px] text-pine-subtle dark:text-pine-darkSubtle truncate">@thinktwicekenya</div>
+          </div>
+        </a>
+
+        <!-- 7. X (#111827 Charcoal/Black) -->
+        <a href="https://x.com/ThinkTwiceKenya" target="_blank" rel="noopener noreferrer" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#111827] dark:hover:border-white shadow-arch transition flex flex-col justify-between gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#111827] text-white flex items-center justify-center shadow-xs font-mono font-bold text-lg">
+            𝕏
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark">X</div>
+            <div class="font-mono text-[11px] text-pine-subtle dark:text-pine-darkSubtle truncate">@ThinkTwiceKenya</div>
+          </div>
+        </a>
+
+        <!-- 8. WhatsApp (#25D366) -->
+        <a href="https://wa.me/254725406049" target="_blank" rel="noopener noreferrer" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#25D366] shadow-arch transition flex flex-col justify-between gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#25D366] text-white flex items-center justify-center shadow-xs">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark">WhatsApp</div>
+            <div class="font-mono text-[11px] text-pine-subtle dark:text-pine-darkSubtle font-mono-num">0725 406049</div>
+          </div>
+        </a>
+
+        <!-- 9. Kasarani Desk Copy (#2563EB) -->
+        <button type="button" id="plat-copy-kasarani" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#2563EB] shadow-arch transition flex flex-col justify-between gap-3 text-left cursor-pointer">
+          <div class="w-11 h-11 rounded-xl bg-[#2563EB] text-white flex items-center justify-center shadow-xs font-mono font-bold text-xs">
+            TEL
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark">Kasarani Desk</div>
+            <div class="font-mono text-[11px] text-[#2563EB] dark:text-cobalt-dark font-mono-num">Copy 0725 406049</div>
+          </div>
+        </button>
+
+        <!-- 10. Head Office Line Copy (#0F766E Teal) -->
+        <button type="button" id="plat-copy-hq" class="group p-4 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-[#0F766E] shadow-arch transition flex flex-col justify-between gap-3 text-left cursor-pointer">
+          <div class="w-11 h-11 rounded-xl bg-[#0F766E] text-white flex items-center justify-center shadow-xs font-mono font-bold text-xs">
+            HQ
+          </div>
+          <div>
+            <div class="font-display font-bold text-sm text-pine dark:text-pine-dark">Donholm HQ</div>
+            <div class="font-mono text-[11px] text-[#0F766E] dark:text-[#2DD4BF] font-mono-num">+254 769 999 694</div>
+          </div>
+        </button>
+      </div>
+
+      <footer class="pt-6 border-t border-stonebg-grid dark:border-stonebg-darkGrid flex flex-col sm:flex-row items-center justify-between gap-2 font-mono text-xs text-pine-subtle dark:text-pine-darkSubtle">
+        <span>© <span id="year-readout">2026</span> THINK TWICE KASARANI • ROYAL PLAZA, KASARANI-MWIKI RD</span>
+        <span class="font-mono-num">QWG6+P64 • MON–SAT 09:00–17:00 EAT</span>
+      </footer>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PICK-UP WISH-BAG SLIDE-OVER DRAWER                                    -->
+  <!-- ===================================================================== -->
+  <div id="bag-backdrop" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs hidden"></div>
+  <aside
+    id="bag-drawer"
+    aria-label="Pick-Up Wish-Bag"
+    class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-stonebg-card dark:bg-stonebg-darkCard border-l border-stonebg-grid dark:border-stonebg-darkGrid shadow-drawer translate-x-full transition-transform duration-300 flex flex-col"
+  >
+    <div class="p-5 border-b border-stonebg-grid dark:border-stonebg-darkGrid flex items-center justify-between">
+      <div>
+        <div class="font-mono text-[10px] uppercase tracking-widest text-cobalt dark:text-cobalt-dark font-bold">SAME-DAY COUNTER HOLD</div>
+        <h3 class="font-display text-xl font-bold text-pine dark:text-pine-dark">Pick-Up Wish-Bag</h3>
+      </div>
+      <button type="button" id="bag-close-btn" aria-label="Close Wish-Bag" class="w-8 h-8 rounded-lg font-mono text-sm font-bold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">
+        ✕
+      </button>
+    </div>
+
+    <div id="bag-items-container" class="flex-1 overflow-y-auto p-5 space-y-3"></div>
+
+    <div class="p-5 border-t border-stonebg-grid dark:border-stonebg-darkGrid bg-stonebg dark:bg-stonebg-dark space-y-3">
+      <div class="flex items-center justify-between font-mono text-xs">
+        <span class="text-pine-muted dark:text-pine-darkMuted">Pieces</span>
+        <span id="bag-total-qty" class="font-bold font-mono-num">0</span>
+      </div>
+      <div class="flex items-center justify-between font-mono text-sm font-bold">
+        <span>Subtotal</span>
+        <span id="bag-subtotal-out" class="text-cobalt dark:text-cobalt-dark font-mono-num">KSh 0</span>
+      </div>
+      <div class="flex gap-2 pt-1">
+        <button type="button" id="bag-whatsapp-hold" class="flex-1 py-2.5 px-4 rounded-lg font-mono text-xs font-bold bg-[#25D366] text-white cursor-pointer">
+          Send WhatsApp Hold
+        </button>
+        <button type="button" id="bag-empty-btn" class="py-2.5 px-3.5 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">
+          Clear
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================================================================== -->
+  <!-- MANAGEMENT PORTAL MODAL                                               -->
+  <!-- ===================================================================== -->
+  <div id="manager-backdrop" class="fixed inset-0 z-50 bg-black/55 backdrop-blur-xs hidden items-center justify-center p-4">
+    <div role="dialog" aria-modal="true" aria-labelledby="manager-modal-title" class="w-full max-w-lg rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch overflow-hidden">
+      <div class="p-5 border-b border-stonebg-grid dark:border-stonebg-darkGrid flex items-center justify-between">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-widest text-cobalt dark:text-cobalt-dark font-bold">KASARANI FLOOR CONTROLS</div>
+          <h3 id="manager-modal-title" class="font-display text-xl font-bold text-pine dark:text-pine-dark">Management Portal</h3>
+        </div>
+        <button type="button" id="manager-close-btn" aria-label="Close Management Portal" class="w-8 h-8 rounded-lg font-mono text-sm font-bold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">
+          ✕
+        </button>
+      </div>
+
+      <div class="p-5 space-y-4">
+        <div>
+          <label for="mgr-tier-select" class="block font-mono text-xs font-bold uppercase mb-1">Active Rack Tier</label>
+          <select id="mgr-tier-select" class="w-full px-3 py-2 rounded-lg font-mono text-xs font-bold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+            <option value="0">1. New Bale Release (KSh 350 – 800)</option>
+            <option value="1" selected>2. KSh 200 Tier</option>
+            <option value="2">3. KSh 100 Markdown</option>
+            <option value="3">4. KSh 50/20 Clearance</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mgr-traffic-select" class="block font-mono text-xs font-bold uppercase mb-1">Floor Traffic Status</label>
+          <select id="mgr-traffic-select" class="w-full px-3 py-2 rounded-lg font-mono text-xs font-bold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">
+            <option value="Steady Floor">Steady Floor</option>
+            <option value="Peak Morning Rush">Peak Morning Rush</option>
+            <option value="Calm Racks">Calm Racks</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mgr-bulletin-text" class="block font-mono text-xs font-bold uppercase mb-1">Bulletin Ticker Message</label>
+          <input type="text" id="mgr-bulletin-text" placeholder="e.g., Fresh European bales unpacked at Royal Plaza Kasarani" class="w-full px-3.5 py-2 rounded-lg text-sm bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid" />
+        </div>
+
+        <button type="button" id="mgr-apply-btn" class="w-full py-2.5 px-4 rounded-lg font-mono text-xs font-bold uppercase tracking-wider bg-limevolt hover:bg-limevolt-hover text-limevolt-ink border border-pine/20 transition cursor-pointer">
+          Apply Live Floor Updates
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Stack -->
+  <div id="toast-container" class="fixed bottom-5 right-5 z-[60] flex flex-col gap-2 max-w-xs pointer-events-none" aria-live="polite"></div>
+
+  <!-- ===================================================================== -->
+  <!-- APPLICATION JAVASCRIPT                                                -->
+  <!-- ===================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      const STORE = {
+        name: 'Think Twice Kasarani',
+        address: 'The Royal Plaza, Kasarani-Mwiki Road, Nairobi',
+        plusCode: 'QWG6+P64',
+        phone: '0725 406049',
+        whatsapp: '254725406049',
+        hqPhone: '+254 769 999 694',
+        openHr: 9,
+        closeHr: 17,
+      };
+
+      const TIERS = [
+        { tag: '1. NEW BALE RELEASE', price: 'KSh 350 – 800', sub: 'Fresh Bales', desc: 'Newly opened European & vintage bales featuring coats, blazers, denim, and statement finds.' },
+        { tag: '2. KSH 200 TIER', price: 'KSh 200', sub: '& Below', desc: 'Active standard tier across dresses, shirts, casual layers, and everyday racks.' },
+        { tag: '3. KSH 100 MARKDOWN', price: 'KSh 100', sub: 'Markdown', desc: 'Scheduled step-down bringing marked racks to KSh 100 for budget-friendly wardrobe building.' },
+        { tag: '4. KSH 50/20 CLEARANCE', price: 'KSh 50 / 20', sub: 'Clearance', desc: 'Final cycle clearance ahead of the next bale rotation across remaining floor racks.' },
+      ];
+
+      const TRAFFIC_MODES = ['Steady Floor', 'Peak Morning Rush', 'Calm Racks'];
+
+      const RACKS = [
+        {
+          id: 'r1',
+          title: 'Structured Wool Blazer',
+          dept: 'Women',
+          size: 'M',
+          price: 200,
+          note: 'Tailored lapel blazer in clean condition; fits true to size M.',
+          img: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          id: 'r2',
+          title: 'Oxford Button-Down Shirt',
+          dept: 'Men',
+          size: 'L',
+          price: 200,
+          note: 'Woven cotton shirt suited for smart-casual or office rotation.',
+          img: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          id: 'r3',
+          title: 'Running Sneakers Pair',
+          dept: 'Shoes',
+          size: 'EU 42',
+          price: 350,
+          note: 'Cushioned athletic pair inspected on the Kasarani footwear rack.',
+          img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          id: 'r4',
+          title: 'Midi Shirt Dress',
+          dept: 'Women',
+          size: 'S',
+          price: 100,
+          note: 'Lightweight midi cut currently marked on the KSh 100 rack.',
+          img: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          id: 'r5',
+          title: 'Kids Graphic Sweatshirt',
+          dept: 'Kids',
+          size: 'M',
+          price: 100,
+          note: 'Soft fleece pullover for kids; inspect chest tag for age fit.',
+          img: 'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          id: 'r6',
+          title: 'Classic Denim Trucker Jacket',
+          dept: 'Men',
+          size: 'XL',
+          price: 400,
+          note: 'Heavyweight denim outer layer from fresh bale rotation.',
+          img: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          id: 'r7',
+          title: 'Low-Top Canvas Trainers',
+          dept: 'Shoes',
+          size: 'EU 40',
+          price: 200,
+          note: 'Everyday low-top canvas shoes in EU 40.',
+          img: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          id: 'r8',
+          title: 'Fine Knit Cardigan',
+          dept: 'Women',
+          size: 'L',
+          price: 50,
+          note: 'Clearance-tier knit cardigan for layering.',
+          img: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80',
+        },
+      ];
+
+      const MAP_LOCATIONS = {
+        kasarani: {
+          badge: 'PRIMARY HUB • QWG6+P64',
+          coords: '-1.2225, 36.8985',
+          title: 'Think Twice Kasarani — The Royal Plaza',
+          address: 'The Royal Plaza, Kasarani-Mwiki Road, Nairobi, Kenya',
+          plus: 'QWG6+P64',
+          phone: '0725 406049',
+          embed: 'https://www.openstreetmap.org/export/embed.html?bbox=36.8850%2C-1.2350%2C36.9120%2C-1.2100&layer=mapnik&marker=-1.2225%2C36.8985',
+          gmaps: 'https://maps.google.com/?q=QWG6+P64,+Kasarani+Mwiki+Rd,+Nairobi',
+          waze: 'https://waze.com/ul?q=QWG6+P64+Kasarani+Mwiki+Rd+Nairobi',
+          osm: 'https://www.openstreetmap.org/?mlat=-1.2225&mlon=36.8985#map=16/-1.2225/36.8985',
+        },
+        cbd: {
+          badge: 'NAIROBI CBD CORRIDOR',
+          coords: '-1.2841, 36.8235',
+          title: 'Think Twice — CBD / Moi Avenue',
+          address: 'Moi Avenue, Central Business District, Nairobi, Kenya',
+          plus: 'CBD • Moi Ave',
+          phone: '0725 406049',
+          embed: 'https://www.openstreetmap.org/export/embed.html?bbox=36.8100%2C-1.2960%2C36.8370%2C-1.2720&layer=mapnik&marker=-1.2841%2C36.8235',
+          gmaps: 'https://maps.google.com/?q=Moi+Avenue,+Nairobi+CBD',
+          waze: 'https://waze.com/ul?q=Moi+Avenue+Nairobi',
+          osm: 'https://www.openstreetmap.org/?mlat=-1.2841&mlon=36.8235#map=16/-1.2841/36.8235',
+        },
+        garden: {
+          badge: 'THIKA ROAD CORRIDOR',
+          coords: '-1.2325, 36.8768',
+          title: 'Think Twice — Garden City / Thika Rd',
+          address: 'Thika Superhighway (Garden City Area), Nairobi, Kenya',
+          plus: 'Thika Rd Corridor',
+          phone: '0723 029503',
+          embed: 'https://www.openstreetmap.org/export/embed.html?bbox=36.8630%2C-1.2450%2C36.8900%2C-1.2200&layer=mapnik&marker=-1.2325%2C36.8768',
+          gmaps: 'https://maps.google.com/?q=Garden+City+Thika+Road+Nairobi',
+          waze: 'https://waze.com/ul?q=Garden+City+Thika+Road+Nairobi',
+          osm: 'https://www.openstreetmap.org/?mlat=-1.2325&mlon=36.8768#map=16/-1.2325/36.8768',
+        },
+        donholm: {
+          badge: 'KENYA HEAD OFFICE',
+          coords: '-1.2921, 36.8895',
+          title: 'Think Twice — Donholm Head Office',
+          address: 'Donholm Road, Opposite Deliverance Church, Nairobi, Kenya',
+          plus: 'HQ: +254 769 999 694',
+          phone: '0753 999300',
+          embed: 'https://www.openstreetmap.org/export/embed.html?bbox=36.8760%2C-1.3040%2C36.9030%2C-1.2800&layer=mapnik&marker=-1.2921%2C36.8895',
+          gmaps: 'https://maps.google.com/?q=Donholm+Road+Deliverance+Church+Nairobi',
+          waze: 'https://waze.com/ul?q=Donholm+Road+Nairobi',
+          osm: 'https://www.openstreetmap.org/?mlat=-1.2921&mlon=36.8895#map=16/-1.2921/36.8895',
+        },
+      };
+
+      const SHOES = {
+        '37': { uk: 'UK 4', us: 'W 6.5 / M 5', cm: '23.3 cm' },
+        '38': { uk: 'UK 5', us: 'W 7.5 / M 5.5', cm: '24.0 cm' },
+        '39': { uk: 'UK 5.5', us: 'W 8 / M 6.5', cm: '24.7 cm' },
+        '40': { uk: 'UK 6.5', us: 'W 9 / M 7.5', cm: '25.3 cm' },
+        '41': { uk: 'UK 7', us: 'W 9.5 / M 8', cm: '26.0 cm' },
+        '42': { uk: 'UK 8', us: 'W 10.5 / M 9', cm: '26.7 cm' },
+        '43': { uk: 'UK 9', us: 'W 11.5 / M 10', cm: '27.3 cm' },
+        '44': { uk: 'UK 9.5', us: 'W 12 / M 10.5', cm: '28.0 cm' },
+      };
+
+      const GARMENT_NOTES = {
+        S: 'Roughly UK 8–10 / US 4–6. Check shoulder and waist cut.',
+        M: 'Roughly UK 10–12 / US 6–8. Always check individual brand cut and fitting room fit.',
+        L: 'Roughly UK 12–14 / US 8–10. Verify chest and sleeve proportions.',
+        XL: 'Roughly UK 14–16 / US 10–12. Generous fit for layering.',
+      };
+
+      let reviews = [
+        { id: 'rv1', author: 'Faith Wambui', rating: 5, tier: 'KSh 200 Tier', time: '2 days ago', comment: 'Clean layout at The Royal Plaza on Kasarani-Mwiki Road and easy to spot current price racks.' },
+        { id: 'rv2', author: 'David Kiprop', rating: 4, tier: 'KSh 100 Markdown', time: '5 days ago', comment: 'Good markdown selection when you arrive early in the morning.' },
+        { id: 'rv3', author: 'Amina Hassan', rating: 5, tier: 'New Bale Release', time: '1 week ago', comment: 'Found a great blazer and kids wear. Friendly staff and clear pricing.' },
+      ];
+
+      let wishBag = [];
+      let inspectedItem = null;
+
+      const state = {
+        mode: 'gold',
+        tierIdx: 1,
+        trafficIdx: 0,
+        dept: 'All',
+        maxPrice: 1000,
+        size: 'All',
+        query: '',
+        revStar: 'All',
+        locKey: 'kasarani',
+      };
+
+      function esc(s) {
+        return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      }
+
+      function toast(msg) {
+        const box = document.getElementById('toast-container');
+        if (!box) return;
+        const item = document.createElement('div');
+        item.className = 'toast-pop pointer-events-auto px-3.5 py-2.5 rounded-xl bg-pine text-limevolt dark:bg-limevolt dark:text-limevolt-ink font-mono text-xs font-bold shadow-arch';
+        item.textContent = msg;
+        box.appendChild(item);
+        setTimeout(() => { item.remove(); }, 2600);
+      }
+
+      function copyVal(val, msg) {
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(val).then(() => toast(msg)).catch(() => execCopy(val, msg));
+          } else {
+            execCopy(val, msg);
+          }
+        } catch (e) {
+          execCopy(val, msg);
+        }
+      }
+
+      function execCopy(val, msg) {
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = val;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          toast(msg);
+        } catch (e) {
+          toast(val);
+        }
+      }
+
+      function nowEAT() {
+        const d = new Date();
+        return new Date(d.getTime() + d.getTimezoneOffset() * 60000 + 3 * 3600 * 1000);
+      }
+
+      function fmtHMS(ms) {
+        const sec = Math.max(0, Math.floor(ms / 1000));
+        const h = String(Math.floor(sec / 3600)).padStart(2, '0');
+        const m = String(Math.floor((sec % 3600) / 60)).padStart(2, '0');
+        const s = String(sec % 60).padStart(2, '0');
+        return `${h}:${m}:${s}`;
+      }
+
+      function updateEAT() {
+        const eat = nowEAT();
+        const day = eat.getDay();
+        const hr = eat.getHours() + eat.getMinutes() / 60;
+        const open = day >= 1 && day <= 6 && hr >= STORE.openHr && hr < STORE.closeHr;
+
+        const stText = document.getElementById('telemetry-status-text');
+        const cdEl = document.getElementById('telemetry-countdown');
+        const dateEl = document.getElementById('cycle-eat-date');
+
+        if (dateEl) {
+          dateEl.textContent = new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).format(eat) + ' EAT';
+        }
+
+        if (open) {
+          const closeAt = new Date(eat);
+          closeAt.setHours(STORE.closeHr, 0, 0, 0);
+          if (stText) stText.textContent = 'OPEN • KASARANI';
+          if (cdEl) cdEl.textContent = `CLOSES ${fmtHMS(closeAt.getTime() - eat.getTime())}`;
+        } else {
+          const next = new Date(eat);
+          if (day >= 1 && day <= 6 && hr < STORE.openHr) {
+            next.setHours(STORE.openHr, 0, 0, 0);
+          } else {
+            next.setDate(next.getDate() + 1);
+            while (next.getDay() === 0) next.setDate(next.getDate() + 1);
+            next.setHours(STORE.openHr, 0, 0, 0);
+          }
+          if (stText) stText.textContent = 'CLOSED • MON–SAT 09–17';
+          if (cdEl) cdEl.textContent = `OPENS ${fmtHMS(next.getTime() - eat.getTime())}`;
+        }
+      }
+
+      function renderTraffic() {
+        const el = document.getElementById('telemetry-traffic-label');
+        if (el) el.textContent = TRAFFIC_MODES[state.trafficIdx] || TRAFFIC_MODES[0];
+      }
+
+      function applyTheme(dark) {
+        document.documentElement.classList.toggle('dark', dark);
+        const lbl = document.getElementById('theme-switch-label');
+        if (lbl) lbl.textContent = dark ? 'LIGHT' : 'DARK';
+        try { localStorage.setItem('t2_grid_theme', dark ? 'dark' : 'light'); } catch (e) {}
+      }
+
+      function renderCycleHub() {
+        const tier = TIERS[state.tierIdx] || TIERS[1];
+        const tagEl = document.getElementById('active-tier-tag');
+        const priceEl = document.getElementById('active-tier-price');
+        const descEl = document.getElementById('active-tier-desc');
+        const heroReadout = document.getElementById('hero-tier-readout');
+        const modeBadge = document.getElementById('cycle-mode-badge');
+        const modeNote = document.getElementById('active-mode-note');
+        const goldBtn = document.getElementById('btn-mode-gold');
+        const redBtn = document.getElementById('btn-mode-red');
+
+        if (tagEl) tagEl.textContent = tier.tag;
+        if (priceEl) priceEl.innerHTML = `${esc(tier.price)} <span class="font-mono text-xs font-semibold text-pine-muted dark:text-pine-darkMuted">${esc(tier.sub)}</span>`;
+        if (descEl) descEl.textContent = tier.desc;
+        if (heroReadout) heroReadout.textContent = tier.price;
+
+        if (state.mode === 'gold') {
+          if (modeBadge) modeBadge.textContent = 'GOLD (4-WEEK)';
+          if (modeNote) modeNote.textContent = '4-week Gold cycle paces markdown steps gradually across the month.';
+          if (goldBtn) goldBtn.className = 'py-2 px-3 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink transition cursor-pointer';
+          if (redBtn) redBtn.className = 'py-2 px-3 rounded-lg font-mono text-xs font-bold text-pine-muted dark:text-pine-darkMuted hover:text-pine dark:hover:text-pine-dark transition cursor-pointer';
+        } else {
+          if (modeBadge) modeBadge.textContent = 'RED (2-WEEK)';
+          if (modeNote) modeNote.textContent = '2-week Red cycle accelerates biweekly rotation toward clearance.';
+          if (redBtn) redBtn.className = 'py-2 px-3 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink transition cursor-pointer';
+          if (goldBtn) goldBtn.className = 'py-2 px-3 rounded-lg font-mono text-xs font-bold text-pine-muted dark:text-pine-darkMuted hover:text-pine dark:hover:text-pine-dark transition cursor-pointer';
+        }
+
+        document.querySelectorAll('.tier-select-btn').forEach((btn) => {
+          const i = Number(btn.getAttribute('data-tier-idx'));
+          btn.className = i === state.tierIdx
+            ? 'tier-select-btn p-3 rounded-xl border text-left transition cursor-pointer bg-limevolt/25 dark:bg-limevolt/15 border-pine dark:border-limevolt text-pine dark:text-limevolt'
+            : 'tier-select-btn p-3 rounded-xl border text-left transition cursor-pointer bg-stonebg dark:bg-stonebg-dark border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt';
+        });
+      }
+
+      function getFilteredRacks() {
+        const q = state.query.trim().toLowerCase();
+        return RACKS.filter((item) => {
+          const okDept = state.dept === 'All' || item.dept === state.dept;
+          const okPrice = item.price <= state.maxPrice;
+          const okSize = state.size === 'All' || item.size.toLowerCase() === state.size.toLowerCase();
+          const okQ = !q || item.title.toLowerCase().includes(q) || item.dept.toLowerCase().includes(q) || item.size.toLowerCase().includes(q);
+          return okDept && okPrice && okSize && okQ;
+        });
+      }
+
+      function renderCatalog() {
+        const grid = document.getElementById('catalog-grid');
+        const countEl = document.getElementById('catalog-match-count');
+        const heroCount = document.getElementById('hero-rack-count');
+        if (!grid) return;
+
+        const list = getFilteredRacks();
+        if (countEl) countEl.textContent = `${list.length} of ${RACKS.length} items displayed`;
+        if (heroCount) heroCount.textContent = `${RACKS.length} Featured`;
+
+        if (list.length === 0) {
+          grid.innerHTML = `<div class="col-span-full p-8 rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-dashed border-stonebg-grid dark:border-stonebg-darkGrid text-center font-mono text-xs">No matching rack items. Adjust filters or click Reset Filters.</div>`;
+          return;
+        }
+
+        grid.innerHTML = list.map((item) => {
+          const inBag = wishBag.find((w) => w.id === item.id);
+          const qty = inBag ? inBag.qty : 0;
+          return `
+            <article class="rounded-2xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch overflow-hidden flex flex-col">
+              <div class="h-44 bg-stonebg-grid dark:bg-stonebg-darkGrid overflow-hidden relative">
+                <img src="${esc(item.img)}" alt="${esc(item.title)}" loading="lazy" onerror="this.src='https://placehold.co/700x420/E7EAE3/0F241C?text=${encodeURIComponent(item.dept)}'" class="w-full h-full object-cover" />
+                <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-stonebg-card/95 dark:bg-stonebg-darkCard/95 border border-stonebg-grid dark:border-stonebg-darkGrid">${esc(item.dept)} • ${esc(item.size)}</span>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+                <h3 class="font-display font-bold text-base text-pine dark:text-pine-dark">${esc(item.title)}</h3>
+                <div class="flex items-center justify-between gap-2 pt-2 border-t border-stonebg-grid dark:border-stonebg-darkGrid">
+                  <span class="font-mono font-bold text-sm text-cobalt dark:text-cobalt-dark font-mono-num">KSh ${item.price}</span>
+                  <div class="flex items-center gap-1.5">
+                    <button type="button" data-inspect="${esc(item.id)}" class="rack-inspect-btn px-2.5 py-1.5 rounded-lg font-mono text-[11px] font-semibold bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer">Inspect</button>
+                    <button type="button" data-add="${esc(item.id)}" class="rack-add-btn px-3 py-1.5 rounded-lg font-mono text-[11px] font-bold bg-limevolt hover:bg-limevolt-hover text-limevolt-ink cursor-pointer">${qty ? `Bag (${qty})` : '+ Bag'}</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        grid.querySelectorAll('.rack-add-btn').forEach((b) => b.addEventListener('click', () => addToBag(b.getAttribute('data-add'))));
+        grid.querySelectorAll('.rack-inspect-btn').forEach((b) => b.addEventListener('click', () => openInspect(b.getAttribute('data-inspect'))));
+      }
+
+      function openInspect(id) {
+        const item = RACKS.find((r) => r.id === id);
+        if (!item) return;
+        inspectedItem = item;
+        const box = document.getElementById('quick-inspect-box');
+        const t = document.getElementById('inspect-item-title');
+        const m = document.getElementById('inspect-item-meta');
+        const n = document.getElementById('inspect-item-note');
+        if (t) t.textContent = item.title;
+        if (m) m.textContent = `${item.dept} • Size ${item.size} • KSh ${item.price} • Kasarani Royal Plaza`;
+        if (n) n.textContent = item.note;
+        if (box) box.classList.remove('hidden');
+      }
+
+      function addToBag(id) {
+        const item = RACKS.find((r) => r.id === id);
+        if (!item) return;
+        const hit = wishBag.find((w) => w.id === id);
+        if (hit) hit.qty += 1;
+        else wishBag.push({ id: item.id, title: item.title, size: item.size, price: item.price, qty: 1 });
+        renderBag();
+        renderCatalog();
+        toast(`Added ${item.title} to Wish-Bag`);
+      }
+
+      function modBag(id, d) {
+        const idx = wishBag.findIndex((w) => w.id === id);
+        if (idx === -1) return;
+        wishBag[idx].qty += d;
+        if (wishBag[idx].qty <= 0) wishBag.splice(idx, 1);
+        renderBag();
+        renderCatalog();
+      }
+
+      function renderBag() {
+        const badge = document.getElementById('nav-bag-badge');
+        const list = document.getElementById('bag-items-container');
+        const qtyEl = document.getElementById('bag-total-qty');
+        const subEl = document.getElementById('bag-subtotal-out');
+
+        const qty = wishBag.reduce((s, w) => s + w.qty, 0);
+        const sub = wishBag.reduce((s, w) => s + w.qty * w.price, 0);
+
+        if (badge) badge.textContent = String(qty);
+        if (qtyEl) qtyEl.textContent = String(qty);
+        if (subEl) subEl.textContent = `KSh ${sub.toLocaleString()}`;
+
+        if (!list) return;
+        if (wishBag.length === 0) {
+          list.innerHTML = `<div class="py-12 text-center font-mono text-xs text-pine-muted dark:text-pine-darkMuted">Wish-Bag is empty. Add items from Live Racks for counter hold.</div>`;
+          return;
+        }
+
+        list.innerHTML = wishBag.map((w) => `
+          <div class="p-3 rounded-xl bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="font-display font-bold text-xs sm:text-sm truncate">${esc(w.title)}</div>
+              <div class="font-mono text-[11px] text-pine-subtle font-mono-num">${esc(w.size)} • KSh ${w.price} ea</div>
+            </div>
+            <div class="flex items-center gap-1 shrink-0">
+              <button type="button" data-sub="${esc(w.id)}" class="b-sub w-7 h-7 rounded font-mono text-xs font-bold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">−</button>
+              <span class="font-mono text-xs font-bold font-mono-num w-5 text-center">${w.qty}</span>
+              <button type="button" data-add="${esc(w.id)}" class="b-add w-7 h-7 rounded font-mono text-xs font-bold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer">+</button>
+            </div>
+          </div>
+        `).join('');
+
+        list.querySelectorAll('.b-sub').forEach((b) => b.addEventListener('click', () => modBag(b.getAttribute('data-sub'), -1)));
+        list.querySelectorAll('.b-add').forEach((b) => b.addEventListener('click', () => modBag(b.getAttribute('data-add'), 1)));
+      }
+
+      function toggleBag(open) {
+        const bd = document.getElementById('bag-backdrop');
+        const dr = document.getElementById('bag-drawer');
+        if (bd) bd.classList.toggle('hidden', !open);
+        if (dr) dr.classList.toggle('translate-x-full', !open);
+      }
+
+      function sendBagWhatsApp() {
+        if (wishBag.length === 0) {
+          toast('Add items to Wish-Bag first');
+          return;
+        }
+        const sub = wishBag.reduce((s, w) => s + w.qty * w.price, 0);
+        const msg = [
+          `Think Twice Kasarani (${STORE.address}, ${STORE.plusCode}) — Counter Hold Request:`,
+          ...wishBag.map((w) => `• ${w.qty}x ${w.title} (${w.size}) = KSh ${w.qty * w.price}`),
+          `Subtotal: KSh ${sub.toLocaleString()}`,
+        ].join('\n');
+        copyVal(msg, 'Hold list copied & opening WhatsApp');
+        window.open(`https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
+      }
+
+      function renderEstimator() {
+        let pcs = 0;
+        let tot = 0;
+        document.querySelectorAll('.est-qty').forEach((inp) => {
+          const q = Math.max(0, parseInt(inp.value, 10) || 0);
+          const p = Math.max(0, parseInt(inp.getAttribute('data-price'), 10) || 0);
+          pcs += q;
+          tot += q * p;
+        });
+        const totOut = document.getElementById('est-total-out');
+        const pcsOut = document.getElementById('est-pieces-out');
+        const perkOut = document.getElementById('est-perk-out');
+        if (totOut) totOut.textContent = `KSh ${tot.toLocaleString()}`;
+        if (pcsOut) pcsOut.textContent = `${pcs} ${pcs === 1 ? 'piece' : 'pieces'}`;
+        if (perkOut) perkOut.textContent = pcs >= 5 ? '5+ piece bundle ready' : 'Add pieces for bundle';
+      }
+
+      function renderConverter() {
+        const eu = document.getElementById('conv-shoe-eu')?.value || '40';
+        const g = document.getElementById('conv-garment-size')?.value || 'M';
+        const s = SHOES[eu] || SHOES['40'];
+        const uk = document.getElementById('conv-uk-out');
+        const us = document.getElementById('conv-us-out');
+        const cm = document.getElementById('conv-cm-out');
+        const gn = document.getElementById('conv-garment-note');
+        if (uk) uk.textContent = s.uk;
+        if (us) us.textContent = s.us;
+        if (cm) cm.textContent = s.cm;
+        if (gn) gn.innerHTML = `<strong>Size ${esc(g)}:</strong> ${esc(GARMENT_NOTES[g] || GARMENT_NOTES.M)}`;
+      }
+
+      function renderReviews() {
+        const listEl = document.getElementById('reviews-list');
+        const pill = document.getElementById('reviews-total-pill');
+        if (!listEl) return;
+
+        const base = 692 + Math.max(0, reviews.length - 3);
+        if (pill) pill.textContent = `4.3★ • ${base}+ Reviews`;
+
+        const items = state.revStar === 'All' ? reviews : reviews.filter((r) => String(r.rating) === String(state.revStar));
+        if (items.length === 0) {
+          listEl.innerHTML = `<div class="p-4 rounded-xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid font-mono text-xs">No reviews for this star filter.</div>`;
+          return;
+        }
+
+        listEl.innerHTML = items.map((r) => `
+          <article class="p-4 rounded-xl bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid shadow-arch space-y-1.5">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-sm">${esc(r.author)}</span>
+                <span class="px-2 py-0.5 rounded font-mono text-[10px] bg-stonebg dark:bg-stonebg-dark border border-stonebg-grid dark:border-stonebg-darkGrid">${esc(r.tier)}</span>
+              </div>
+              <span class="font-mono text-xs font-bold text-cobalt dark:text-cobalt-dark">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)} • ${esc(r.time)}</span>
+            </div>
+            <p class="text-xs sm:text-sm text-pine-muted dark:text-pine-darkMuted">${esc(r.comment)}</p>
+          </article>
+        `).join('');
+      }
+
+      function renderMapLocation() {
+        const loc = MAP_LOCATIONS[state.locKey] || MAP_LOCATIONS.kasarani;
+        const iframe = document.getElementById('osm-map-frame');
+        const badge = document.getElementById('map-loc-badge');
+        const coords = document.getElementById('map-loc-coords');
+        const title = document.getElementById('map-loc-title');
+        const addr = document.getElementById('map-loc-address');
+        const plus = document.getElementById('map-loc-plus');
+        const phone = document.getElementById('map-loc-phone');
+        const gm = document.getElementById('link-gmaps');
+        const wz = document.getElementById('link-waze');
+        const os = document.getElementById('link-osm');
+
+        if (iframe && iframe.getAttribute('src') !== loc.embed) iframe.setAttribute('src', loc.embed);
+        if (badge) badge.textContent = loc.badge;
+        if (coords) coords.textContent = loc.coords;
+        if (title) title.textContent = loc.title;
+        if (addr) addr.textContent = loc.address;
+        if (plus) plus.textContent = loc.plus;
+        if (phone) phone.textContent = loc.phone;
+        if (gm) gm.href = loc.gmaps;
+        if (wz) wz.href = loc.waze;
+        if (os) os.href = loc.osm;
+
+        document.querySelectorAll('.loc-tab').forEach((t) => {
+          const active = t.getAttribute('data-loc') === state.locKey;
+          t.className = active
+            ? 'loc-tab px-3.5 py-2 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink cursor-pointer'
+            : 'loc-tab px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer';
+        });
+      }
+
+      function toggleManager(open) {
+        const bd = document.getElementById('manager-backdrop');
+        if (!bd) return;
+        bd.classList.toggle('hidden', !open);
+        bd.classList.toggle('flex', open);
+      }
+
+      function bindEvents() {
+        document.getElementById('copy-code-top')?.addEventListener('click', () => copyVal(STORE.plusCode, `Copied ${STORE.plusCode}`));
+        document.getElementById('copy-phone-top')?.addEventListener('click', () => copyVal(STORE.phone, `Copied ${STORE.phone}`));
+        document.getElementById('plat-copy-kasarani')?.addEventListener('click', () => copyVal(STORE.phone, `Copied Kasarani desk ${STORE.phone}`));
+        document.getElementById('plat-copy-hq')?.addEventListener('click', () => copyVal(STORE.hqPhone, `Copied HQ ${STORE.hqPhone}`));
+
+        document.getElementById('telemetry-traffic-btn')?.addEventListener('click', () => {
+          state.trafficIdx = (state.trafficIdx + 1) % TRAFFIC_MODES.length;
+          renderTraffic();
+          toast(`Traffic: ${TRAFFIC_MODES[state.trafficIdx]}`);
+        });
+
+        document.getElementById('theme-switch-btn')?.addEventListener('click', () => {
+          applyTheme(!document.documentElement.classList.contains('dark'));
+        });
+
+        document.getElementById('btn-mode-gold')?.addEventListener('click', () => { state.mode = 'gold'; renderCycleHub(); });
+        document.getElementById('btn-mode-red')?.addEventListener('click', () => { state.mode = 'red'; renderCycleHub(); });
+
+        document.querySelectorAll('.tier-select-btn').forEach((b) => {
+          b.addEventListener('click', () => {
+            const idx = Number(b.getAttribute('data-tier-idx'));
+            if (!Number.isNaN(idx) && TIERS[idx]) { state.tierIdx = idx; renderCycleHub(); }
+          });
+        });
+
+        document.getElementById('share-tier-whatsapp')?.addEventListener('click', () => {
+          const t = TIERS[state.tierIdx] || TIERS[1];
+          const txt = `${STORE.name} (${STORE.address}, ${STORE.plusCode}) — ${t.price} ${t.sub} [${state.mode.toUpperCase()}] • Tel: ${STORE.phone}`;
+          window.open(`https://wa.me/?text=${encodeURIComponent(txt)}`, '_blank', 'noopener,noreferrer');
+        });
+
+        document.getElementById('copy-tier-text')?.addEventListener('click', () => {
+          const t = TIERS[state.tierIdx] || TIERS[1];
+          copyVal(`${STORE.name}: ${t.price} ${t.sub} (${STORE.plusCode})`, 'Copied active tier');
+        });
+
+        document.querySelectorAll('.dept-btn').forEach((b) => {
+          b.addEventListener('click', () => {
+            state.dept = b.getAttribute('data-dept') || 'All';
+            document.querySelectorAll('.dept-btn').forEach((x) => {
+              const on = x.getAttribute('data-dept') === state.dept;
+              x.className = on
+                ? 'dept-btn px-3.5 py-2 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink cursor-pointer'
+                : 'dept-btn px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark text-pine-muted dark:text-pine-darkMuted border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer';
+            });
+            renderCatalog();
+          });
+        });
+
+        document.getElementById('catalog-search')?.addEventListener('input', (e) => { state.query = e.target.value || ''; renderCatalog(); });
+
+        document.getElementById('catalog-max-price')?.addEventListener('input', (e) => {
+          state.maxPrice = Number(e.target.value) || 1000;
+          const out = document.getElementById('catalog-max-price-readout');
+          if (out) out.textContent = String(state.maxPrice);
+          renderCatalog();
+        });
+
+        document.getElementById('catalog-size-select')?.addEventListener('change', (e) => { state.size = e.target.value; renderCatalog(); });
+
+        document.getElementById('catalog-reset-btn')?.addEventListener('click', () => {
+          state.dept = 'All';
+          state.maxPrice = 1000;
+          state.size = 'All';
+          state.query = '';
+          const s = document.getElementById('catalog-search');
+          const sl = document.getElementById('catalog-max-price');
+          const ro = document.getElementById('catalog-max-price-readout');
+          const sz = document.getElementById('catalog-size-select');
+          if (s) s.value = '';
+          if (sl) sl.value = '1000';
+          if (ro) ro.textContent = '1000';
+          if (sz) sz.value = 'All';
+          document.querySelectorAll('.dept-btn').forEach((x) => {
+            const on = x.getAttribute('data-dept') === 'All';
+            x.className = on
+              ? 'dept-btn px-3.5 py-2 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink cursor-pointer'
+              : 'dept-btn px-3.5 py-2 rounded-lg font-mono text-xs font-semibold bg-stonebg dark:bg-stonebg-dark text-pine-muted dark:text-pine-darkMuted border border-stonebg-grid dark:border-stonebg-darkGrid hover:border-cobalt cursor-pointer';
+          });
+          renderCatalog();
+        });
+
+        document.getElementById('inspect-close-btn')?.addEventListener('click', () => {
+          document.getElementById('quick-inspect-box')?.classList.add('hidden');
+          inspectedItem = null;
+        });
+
+        document.getElementById('inspect-add-bag-btn')?.addEventListener('click', () => {
+          if (inspectedItem) addToBag(inspectedItem.id);
+        });
+
+        document.getElementById('nav-open-bag')?.addEventListener('click', () => toggleBag(true));
+        document.getElementById('bag-close-btn')?.addEventListener('click', () => toggleBag(false));
+        document.getElementById('bag-backdrop')?.addEventListener('click', () => toggleBag(false));
+        document.getElementById('bag-whatsapp-hold')?.addEventListener('click', sendBagWhatsApp);
+        document.getElementById('bag-empty-btn')?.addEventListener('click', () => { wishBag = []; renderBag(); renderCatalog(); toast('Wish-Bag cleared'); });
+
+        document.querySelectorAll('.est-qty').forEach((i) => i.addEventListener('input', renderEstimator));
+        document.getElementById('bundle-zero-btn')?.addEventListener('click', () => {
+          document.querySelectorAll('.est-qty').forEach((i) => { i.value = '0'; });
+          renderEstimator();
+        });
+
+        document.getElementById('conv-shoe-eu')?.addEventListener('change', renderConverter);
+        document.getElementById('conv-garment-size')?.addEventListener('change', renderConverter);
+
+        document.querySelectorAll('.rev-star-btn').forEach((b) => {
+          b.addEventListener('click', () => {
+            state.revStar = b.getAttribute('data-rev-star') || 'All';
+            document.querySelectorAll('.rev-star-btn').forEach((x) => {
+              const on = x === b;
+              x.className = on
+                ? 'rev-star-btn px-3 py-1.5 rounded-lg font-mono text-xs font-bold bg-limevolt text-limevolt-ink cursor-pointer'
+                : 'rev-star-btn px-3 py-1.5 rounded-lg font-mono text-xs font-semibold bg-stonebg-card dark:bg-stonebg-darkCard border border-stonebg-grid dark:border-stonebg-darkGrid cursor-pointer';
+            });
+            renderReviews();
+          });
+        });
+
+        document.getElementById('review-submit-form')?.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const author = (document.getElementById('rev-name')?.value || '').trim();
+          const rating = Number(document.getElementById('rev-rating')?.value) || 5;
+          const tier = document.getElementById('rev-tier')?.value || 'KSh 200 Tier';
+          const comment = (document.getElementById('rev-text')?.value || '').trim();
+          if (!author || !comment) return;
+          reviews.unshift({ id: `rv-${Date.now()}`, author, rating, tier, time: 'Just now', comment });
+          renderReviews();
+          e.target.reset();
+          toast('Review added');
+        });
+
+        document.querySelectorAll('.loc-tab').forEach((t) => {
+          t.addEventListener('click', () => {
+            const k = t.getAttribute('data-loc');
+            if (k && MAP_LOCATIONS[k]) { state.locKey = k; renderMapLocation(); }
+          });
+        });
+
+        document.getElementById('map-copy-pin-btn')?.addEventListener('click', () => {
+          const loc = MAP_LOCATIONS[state.locKey] || MAP_LOCATIONS.kasarani;
+          copyVal(`${loc.title} — ${loc.address} (${loc.plus}) • Tel: ${loc.phone}`, `Copied ${loc.title}`);
+        });
+
+        document.getElementById('nav-open-manager')?.addEventListener('click', () => toggleManager(true));
+        document.getElementById('manager-close-btn')?.addEventListener('click', () => toggleManager(false));
+        document.getElementById('manager-backdrop')?.addEventListener('click', (e) => { if (e.target.id === 'manager-backdrop') toggleManager(false); });
+
+        document.getElementById('mgr-apply-btn')?.addEventListener('click', () => {
+          const tIdx = Number(document.getElementById('mgr-tier-select')?.value);
+          const trVal = document.getElementById('mgr-traffic-select')?.value;
+          const bull = (document.getElementById('mgr-bulletin-text')?.value || '').trim();
+
+          if (!Number.isNaN(tIdx) && TIERS[tIdx]) state.tierIdx = tIdx;
+          const trIdx = TRAFFIC_MODES.indexOf(trVal);
+          if (trIdx >= 0) state.trafficIdx = trIdx;
+
+          if (bull) {
+            const line = `<span>LIVE UPDATE: ${esc(bull.toUpperCase())}</span><span>//</span><span>KASARANI ROYAL PLAZA (QWG6+P64)</span>`;
+            const a = document.getElementById('ticker-slot-a');
+            const b = document.getElementById('ticker-slot-b');
+            if (a) a.innerHTML = line;
+            if (b) b.innerHTML = line;
+          }
+
+          renderCycleHub();
+          renderTraffic();
+          toggleManager(false);
+          toast('Floor updates applied');
+        });
+
+        const yr = document.getElementById('year-readout');
+        if (yr) yr.textContent = String(nowEAT().getFullYear());
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') { toggleBag(false); toggleManager(false); }
+        });
+      }
+
+      function init() {
+        let savedTheme = null;
+        try { savedTheme = localStorage.getItem('t2_grid_theme'); } catch (e) {}
+        applyTheme(savedTheme === 'dark');
+
+        bindEvents();
+        updateEAT();
+        setInterval(updateEAT, 1000);
+        renderTraffic();
+        renderCycleHub();
+        renderCatalog();
+        renderBag();
+        renderEstimator();
+        renderConverter();
+        renderReviews();
+        renderMapLocation();
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+      else init();
+    })();
+  </script>
+</body>
+</html>
